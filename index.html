@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Cyclone Idai Mozambique 3W</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/dc.css" />
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+        <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/d3.tip.min.js"></script>
+        <script src="js/crossfilter.v1.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/dc.js"></script>
+        <script src="js/dc.leaflet.js"></script>
+    </head>
+    <body>
+        <div class="loader" id="loader"></div>
+        <div class="container">
+            <div class="row title">
+                <div class="col-sm-2 img">
+                    <a href="https://data.humdata.org"><img src="img/HDX-logo-home.svg"></a>
+                </div>
+                <h2>Mozambique Cyclone Idai | 3W - Who is doing What Where <span></span></h2>
+            </div>
+            <div class="row viz-container">
+                <div class="col-md-4">
+                    <h4>Who (Top 20)</h4>
+                    <div id="whoChart"></div>
+                </div>
+                <div class="col-md-4">
+                    <h4>What</h4>
+                    <div id="whatChart"></div>
+                </div>
+                <div class="col-md-4">
+                    <h4><a href="https://data.humdata.org/dataset/mozambique-cyclone-idai-4w" target="blank">Download dataset from HDX</a> <span class="pull-right"><a class="reset" id="reset" href="javascript:dc.filterAll();dc.redrawAll();">Clear selections</a></span></h4>
+                    <div id="map"></div>
+                    <p class="small">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</p>
+                </div>
+
+            </div> <!-- viz-container -->
+        </div> <!-- fin container-->
+        <script src="js/site.js"></script>
+    </body>
+</html>
